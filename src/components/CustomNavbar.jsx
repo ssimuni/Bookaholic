@@ -43,9 +43,9 @@ const CustomNavbar = () => {
         fixed="top"
         className="px-4 transparent-navbar"
         style={{
-          background: '#CD5C08', // Transparent gradient
-          backdropFilter: 'blur(5px) brightness(1.1) hue-rotate(5deg) saturate(0.9)', // Adjusted blur and saturation
-          border: '1px solid rgba(200, 200, 200, 0.1)', // Light border
+          background: 'rgba(0,0,0,0.5)',
+          backdropFilter: 'blur(5px) brightness(1.5) hue-rotate(5deg) saturate(0.9)', // Adjusted blur and saturation
+          border: '1px solid rgba(200, 200, 200, 0.3)', // Light border
           boxShadow: '0px 50% ${blur(normal)} ${inset}',
         }}
       >
@@ -57,13 +57,18 @@ const CustomNavbar = () => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
-              <NavLink tag={ReactLink} to="./About" style={{ color: 'white' }}>
+              <NavLink tag={ReactLink} to="/about" style={{ color: 'white' }}>
                 About
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={ReactLink} to="./Contact" style={{ color: 'white' }}>
+              <NavLink tag={ReactLink} to="/contact" style={{ color: 'white' }}>
                 Contact
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink tag={ReactLink} to="/dashboard" style={{ color: 'white' }}>
+                Dashboard
               </NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>

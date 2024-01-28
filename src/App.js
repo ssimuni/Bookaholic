@@ -4,6 +4,7 @@ import Signup from './pages/Signup';
 import Signin from './pages/Signin';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Dashboard from './pages/Dashboard';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Services from './pages/Services';
@@ -22,6 +23,7 @@ import AddExchange from './pages/userRoutes/AddExchange';
 import OrderPlaceForm from './pages/userRoutes/OrderPlaceForm';
 import AllBuySellPost from './pages/userRoutes/AllBuySellPost';
 import TransactionBuySell from './pages/userRoutes/TransactionBuySell';
+
 function App() {
   return (
     <UserProvider>
@@ -34,6 +36,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/user" element={<Privateroute />}>
             <Route path="addsell" element={<AddBuySell />} />
             <Route path="buysell" element={<BuySellSection />} />

@@ -22,6 +22,8 @@ import AddBorrow from './pages/userRoutes/AddBorrow';
 import AddExchange from './pages/userRoutes/AddExchange';
 import OrderPlaceForm from './pages/userRoutes/OrderPlaceForm';
 import AllBuySellPost from './pages/userRoutes/AllBuySellPost';
+import AllBorrowPost from './pages/userRoutes/AllBorrowPost';
+import AllExchangePost from './pages/userRoutes/AllExchangePost';
 import TransactionBuySell from './pages/userRoutes/TransactionBuySell';
 
 function App() {
@@ -48,6 +50,8 @@ function App() {
             <Route path="addexchange" element={<AddExchange />} />
             <Route path="orderplace" element={<OrderPlaceForm />} />
             <Route path="all-buy-sell-post" element={<AllBuySellPost />} />
+            <Route path="all-borrow-post" element={<AllBorrowPost />} />
+            <Route path="all-exchange-post" element={<AllExchangePost />} />
             <Route path="transaction-buy-sell" element={<TransactionBuySell />} />
           </Route>
         </Routes>

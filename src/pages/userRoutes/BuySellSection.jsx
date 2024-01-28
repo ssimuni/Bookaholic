@@ -9,7 +9,6 @@ const BuySellSection = () => {
       <div
         style={{
           height: '120vh',
-          // background: 'linear-gradient(270deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 137, 56, 0.10) 100%)',
           background: '#F5F5F5',
           marginTop: '0px',
           backgroundSize: 'cover',

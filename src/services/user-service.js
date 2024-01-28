@@ -48,6 +48,15 @@ export const getAllBuySellPost = () => {
         .then((response) => response.data)
 }
 
+export const getBorrowPost = () => {
+    return myAxios.get('/api/user/all-borrow-post')
+        .then((response) => response.data)
+}
+export const getExchangePost = () => {
+    return myAxios.get('/api/user/all-exchange-post')
+        .then((response) => response.data)
+}
+
 export const getTransactionBuySell = () => {
     return myAxios.get('/api/user/transaction-buy-sell')
         .then((response) => response.data)
